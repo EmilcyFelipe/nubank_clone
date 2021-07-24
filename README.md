@@ -1,16 +1,7 @@
 # nubank_clone
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Saga_flutter
+    Este projeto tem como finalidade a solidificação dos conhecimentos adquiridos nos meus cursos de flutter. 
+    Trata-se de um projeto pessoal, um desafio particular, para clonar a interface da nova atualização do nubank
+## Status
+    Em Construção ⚙
