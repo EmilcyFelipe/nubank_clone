@@ -89,12 +89,15 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
-                        width: 70,
-                        height: 70,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
-                        child: Text("ola"),
+                      Transform.rotate(
+                        angle: .785,
+                        child: Container(
+                          width: 70,
+                          height: 70,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
+                          child: FaIcon(FontAwesomeIcons.vectorSquare),
+                        ),
                       ),
                       Container(
                         height: 50,
@@ -134,7 +137,7 @@ class _HomePageState extends State<HomePage> {
                           height: 70,
                           alignment: Alignment.center,
                           decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
-                          child: Text("ola"),
+                          child:FaIcon(FontAwesomeIcons.moneyBillWave),
                         ),
                         Container(
                           height: 50,
