@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[600],
+      backgroundColor: Color.fromRGBO(141,0,230,1),
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Container(
@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               width: double.infinity,
               height: 180,
-              color: Colors.deepPurple[600],
+              color: Color.fromRGBO(141,0,230,1),
               child: Container(
                 padding: EdgeInsets.all(20),
                 child: Column(
@@ -35,9 +35,9 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       GestureDetector(
                         child: Container(
-                          padding: EdgeInsets.all(10),
+                          padding: EdgeInsets.all(8),
                           decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.white.withOpacity(.2) ),
-                          child: Icon(Icons.person_outline,size: 20,color: Colors.white,))
+                          child: Icon(Icons.person_outline,size: 30,color: Colors.white,))
                       ),
                       Container(
                         width: 150,
@@ -61,152 +61,207 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(20,40,20,40),
+              padding: EdgeInsets.fromLTRB(20,20,20,10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Conta",style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                    Text("Conta",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                     Icon(Icons.arrow_forward_ios,size: 15.0,)
                   ],
                 ),
-                Text("R\$ 57,80", style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),)
+                SizedBox(height: 20,),
+                Text("R\$ 57,80", style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
               ],
               ),
             ),
             Container(
-              width: 2000,
               
-              height: 110,
+              height: 160,
               child: ListView(
                 physics: BouncingScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 children: [
-                 Padding(padding: EdgeInsets.all(20),
+                 Container(
+                     padding: EdgeInsets.only(left:5,right: 5),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        width: 50,
-                        height: 50,
+                        width: 70,
+                        height: 70,
                         alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
                         child: Text("ola"),
                       ),
-                      Text("Pix")
+                      Container(
+                        height: 50,
+                        padding: const EdgeInsets.only(top:10),
+                        child: Text("Pix",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),),
+                      )
                     ],
                   )
                   ),
-                  Padding(padding: EdgeInsets.all(20),
+                  Container(
+                    padding: EdgeInsets.only(left:5,right: 5),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        width: 50,
-                        height: 50,
+                        width: 70,
+                        height: 70,
                         alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
                         child: FaIcon(FontAwesomeIcons.barcode),
                       ),
-                      Text("Pagar")
+                      Container(
+                        height: 50,
+                        padding: const EdgeInsets.only(top:10),
+                        child: Text("Pagar",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),),
+                      )
                     ],
                   )
                   ),
-                  Padding(padding: EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 50,
-                        height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
-                        child: Text("ola"),
-                      ),
-                      Text("Transferir")
-                    ],
-                  )
+                  Container(
+                    padding: EdgeInsets.only(left:5,right: 5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                        width: 70,
+                          height: 70,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
+                          child: Text("ola"),
+                        ),
+                        Container(
+                          height: 50,
+                          padding: const EdgeInsets.only(top:10),
+                          child: Text("Transferir",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),),
+                        )
+                      ],
+                    )
                   ),
-                  Padding(padding: EdgeInsets.all(20),
+                  Container(
+                    padding: EdgeInsets.only(left:5,right: 5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                        width: 70,
+                          height: 70,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
+                          child: Icon(Icons.ballot_outlined),
+                        ),
+                        Container(
+                          height: 50,
+                          padding: const EdgeInsets.only(top:10),
+                          child: Text("Depositar",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),),
+                        )
+                      ],
+                    )
+                    ),
+                  Container(
+                    padding: EdgeInsets.only(left:5,right: 5),
+                    width: 80,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                        width: 70,
+                          height: 70,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
+                          child: FaIcon(FontAwesomeIcons.handHoldingUsd,size: 20,),
+                        ),
+                        Container(
+                          height: 50,
+                          padding: const EdgeInsets.only(top:10),
+                          child: Text("Pegar empresta",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,), textAlign: TextAlign.justify,),
+                        )
+                      ],
+                    )
+                    ),
+                  Container(
+                     padding: EdgeInsets.only(left:5,right: 5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 70,
+                          height: 70,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
+                          child: FaIcon(FontAwesomeIcons.mobile,size: 20,),
+                        ),
+                        Container(
+                          height: 50,
+                          padding: const EdgeInsets.only(top:10),
+                          child: Text("Recarga de",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),),
+                        )
+                      ],
+                    )
+                    ),
+                  Container(
+                      padding: EdgeInsets.only(left:5,right: 5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 70,
+                          height: 70,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
+                          child: FaIcon(FontAwesomeIcons.dollarSign),
+                        ),
+                        Container(
+                          height: 50,
+                          padding: const EdgeInsets.only(top:10),
+                          child: Text("Cobrar",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),),
+                        )
+                      ],
+                    )
+                    ),
+                  Container(
+                    padding: EdgeInsets.only(left:5,right: 5),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                        width: 70,
+                          height: 70,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
+                          child: FaIcon(FontAwesomeIcons.heart,size: 20,),
+                        ),
+                        Container(
+                          height: 50,
+                          padding: const EdgeInsets.only(top:10),
+                          child: Text("Doação",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),),
+                        )
+                      ],
+                    )
+                    ),
+                  Container(
+                     padding: EdgeInsets.only(left:5,right: 5),
+                     width: 80,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        width: 50,
-                        height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
-                        child: Text("ola"),
+                        width: 70,
+                        height: 70,
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.05)),
+                        child: Icon(Icons.help_outline),
                       ),
-                      Text("Depositar")
-                    ],
-                  )
-                  ),
-                  Padding(padding: EdgeInsets.all(20),
-                  child: Column(
-                    children: [
                       Container(
-                        width: 50,
                         height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
-                        child: Text("ola"),
-                      ),
-                      Text("Pegar empresta")
-                    ],
-                  )
-                  ),
-                  Padding(padding: EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 50,
-                        height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
-                        child: Text("ola"),
-                      ),
-                      Text("Recarga de")
-                    ],
-                  )
-                  ),
-                  Padding(padding: EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 50,
-                        height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
-                        child: FaIcon(FontAwesomeIcons.dollarSign),
-                      ),
-                      Text("Cobrar")
-                    ],
-                  )
-                  ),
-                  Padding(padding: EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 50,
-                        height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
-                        child: Text("ola"),
-                      ),
-                      Text("Doação")
-                    ],
-                  )
-                  ),
-                  Padding(padding: EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 50,
-                        height: 50,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),color: Colors.black.withOpacity(.2)),
-                        child: Text("ola"),
-                      ),
-                      Text("Encontrar atalhos")
+                        padding: const EdgeInsets.only(top:10),
+                        child: Text("Encontrar atalhos",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,),textAlign: TextAlign.justify,),
+                      )
                     ],
                   )
                   ),
@@ -217,7 +272,7 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.all(20),
               child: Container(
                 
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.black.withOpacity(.1)),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.black.withOpacity(.05)),
                 child:Padding(
                   padding: EdgeInsets.all(12),
                   child: Row(
@@ -231,7 +286,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-              height: 90,
+              height: 100,
               child: ListView(
                 physics: BouncingScrollPhysics(),
                 scrollDirection: Axis.horizontal,
@@ -240,8 +295,9 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black.withOpacity(.1)),
-                    child: Text("Você tem R\$ 25.000,00 disponíveis para ...",style: TextStyle(fontSize: 20),),
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black.withOpacity(.05)),
+                    alignment: Alignment.center,
+                    child: Text("Você tem R\$ 25.000,00 disponíveis para ...",style: TextStyle(fontSize: 15),),
                     ),
                     SizedBox(
                       width: 20,
@@ -249,20 +305,21 @@ class _HomePageState extends State<HomePage> {
                     Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black.withOpacity(.1)),
-                    child: Text("Conquiste planos futuros conheça as opções para...",style: TextStyle(fontSize: 20),),
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black.withOpacity(.05)),
+                    alignment: Alignment.center,
+                    child: Text("Conquiste planos futuros conheça as opções para...",style: TextStyle(fontSize: 15),),
                     )
                 ],
               ),
             ),
             Divider(color: Colors.black.withOpacity(.1), height: 40, thickness: 2,),
             Container(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.only(left: 20,right: 20,top: 10,bottom: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                 FaIcon(FontAwesomeIcons.creditCard),
-                SizedBox(height: 20,),
+                SizedBox(height: 15,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -270,23 +327,23 @@ class _HomePageState extends State<HomePage> {
                   Icon(Icons.arrow_forward_ios,size: 15.0,)
 
                 ],),
-                SizedBox(height: 20,),
-                Text("Fatura atual"),
+                SizedBox(height: 15,),
+                Text("Fatura atual",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
                 SizedBox(height: 20,),
                 Text("R\$ 1230,80",style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold,)),
-                SizedBox(height: 20,),
-                Text("Limite disponínel de R\$ 439,16"),
+                SizedBox(height: 15,),
+                Text("Limite disponínel de R\$ 439,16",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey)),
                 
               ],),
               ),
               Divider(color: Colors.black.withOpacity(.1), height: 40, thickness: 2,),
               Container(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.only(left: 20,right: 20,top: 10,bottom: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                 FaIcon(FontAwesomeIcons.handHoldingUsd,size: 20,),
-                SizedBox(height: 20,),
+                SizedBox(height: 15,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -294,21 +351,21 @@ class _HomePageState extends State<HomePage> {
                   Icon(Icons.arrow_forward_ios,size: 15.0,)
 
                 ],),
-                SizedBox(height: 20,),
+                SizedBox(height: 15,),
                 Text("Valor disponível"),
-                SizedBox(height: 20,),
+                SizedBox(height: 15,),
                 Text("R\$ 25.000,00"),
                 
               ],),
               ),
               Divider(color: Colors.black.withOpacity(.1), height: 40, thickness: 2,),
               Container(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.only(left: 20,right: 20,top: 10,bottom: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                 FaIcon(FontAwesomeIcons.heart,size: 20),
-                SizedBox(height: 20,),
+                SizedBox(height: 15,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -316,7 +373,7 @@ class _HomePageState extends State<HomePage> {
                   Icon(Icons.arrow_forward_ios,size: 15.0,)
 
                 ],),
-                SizedBox(height: 20,),
+                SizedBox(height: 15,),
                 Text("Conheça Nubank Vida: um seguro simples e que cabe no bolso"),
                 
               ],),
@@ -329,10 +386,10 @@ class _HomePageState extends State<HomePage> {
                     padding: EdgeInsets.only(left:20),
                     child: Text("Descruba mais",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
                   SizedBox(
-                    height: 30,
+                    height: 20,
                   ),
                   Container(
-                    height: 200,
+                    height: 250,
                     padding: EdgeInsets.only(left:20, bottom: 20,top:20),
                     child: ListView(
                       physics: BouncingScrollPhysics(),
@@ -340,18 +397,22 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Container(
                           padding: EdgeInsets.all(20),
-                          width: 250,
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.black.withOpacity(.1)),
+                          width: 280,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15), color: Colors.black.withOpacity(.05)),
                           child:Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                             Text("WhatsApp",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                            Text("Pagamentos seguros, rápidos e sem tarifa. A experiência Nubank sem..."),
+                            Container(
+                              alignment: Alignment.center,
+                              height: 90,
+                              width: 230,
+                              child: Text("Pagamentos seguros, rápidos e sem tarifa. A experiência Nubank sem...")),
                             ElevatedButton(
                               
                               onPressed: (){},
                               style: ElevatedButton.styleFrom(
-                                primary: Colors.deepPurple[600],
+                                primary: Color.fromRGBO(141,0,230,1),
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30))
                             ),
                              child: Text("Quero conhecer"))
@@ -361,17 +422,21 @@ class _HomePageState extends State<HomePage> {
                         Container(
                           padding: EdgeInsets.all(20),
                           width: 250,
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.black.withOpacity(.1)),
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.black.withOpacity(.05)),
                           child:Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                            Text("Indique seus amigos",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                            Text("Mostre aos seus amigos como é fácil ter uma vida sem burocracia"),
+                            Text("Indique seus amigos",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                            Container(
+                              alignment: Alignment.center,
+                              height: 90,
+                              width: 230,
+                              child: Text("Mostre aos seus amigos como é fácil ter uma vida sem burocracia")),
                             ElevatedButton(
                               
                               onPressed: (){},
                               style: ElevatedButton.styleFrom(
-                                primary: Colors.deepPurple[600],
+                                primary: Color.fromRGBO(141,0,230,1),
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30))
                             ),
                              child: Text("Indicar amigos"))
